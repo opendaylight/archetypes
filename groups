@@ -1,0 +1,4 @@
+# UUID                                                                    	Group Name
+#
+c9025ab9ddc1e3171919e085449f22c54f8f7b54                                  	GitHub Replication
+ldap:cn=odl-gerrit-archetypes-committers,ou=Groups,dc=freestandards,dc=org	ldap/odl-gerrit-archetypes-committers

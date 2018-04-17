@@ -16,6 +16,24 @@
       "revId": "574fbd560dbe8147ae4529f7de5cc071d290baf1",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f12e3ef_76f64fb8",
+        "filename": "opendaylight-startup/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 5867
+      },
+      "writtenOn": "2018-04-17T14:23:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "288cff43_567cf9e5",
+      "revId": "574fbd560dbe8147ae4529f7de5cc071d290baf1",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
     }
   ]
 }

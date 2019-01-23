@@ -74,7 +74,7 @@
          </includes>
     </fileSet>
     <fileSet filtered="true" encoding="UTF-8">
-        <directory>impl/src/main/resources/org/opendaylight/blueprint</directory>
+        <directory>impl/src/main/resources/OSGI-INF/blueprint</directory>
         <includes>
             <include>**/*.xml</include>
          </includes>
@@ -116,7 +116,7 @@
          </includes>
     </fileSet>
     <fileSet filtered="true" encoding="UTF-8">
-        <directory>cli/src/main/resources/org/opendaylight/blueprint</directory>
+        <directory>cli/src/main/resources/OSGI-INF/blueprint</directory>
         <includes>
             <include>**/*.xml</include>
          </includes>

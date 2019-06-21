@@ -3,14 +3,76 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-     <groupId>org.opendaylight.archetypes</groupId>
-     <artifactId>archetypes-aggregator</artifactId>
-     <version>1.2.0-SNAPSHOT</version>
-     <relativePath>../</relativePath>
+    <groupId>org.opendaylight.odlparent</groupId>
+    <artifactId>odlparent</artifactId>
+    <version>5.0.0</version>
+    <relativePath/>
   </parent>
 
+  <groupId>org.opendaylight.archetypes</groupId>
   <artifactId>opendaylight-startup-archetype</artifactId>
+  <version>1.2.0-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
   <name>${project.artifactId}</name>
+
+  <dependencies>
+    <dependency>
+      <!-- Required for https://jira.opendaylight.org/browse/CONTROLLER-1799
+           but this is only half of the solution; the other half is setting org.ops4j.pax.url.mvn.localRepository -->
+      <groupId>org.opendaylight.odlparent</groupId>
+      <artifactId>opendaylight-karaf-empty</artifactId>
+      <version>5.0.0</version>
+      <type>zip</type>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>${maven.archetype.plugin.version}</version>
+      </extension>
+    </extensions>
+
+    <plugins>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <configuration>
+            <!-- Required so that .gitignore gets included in archetypes; see https://issues.apache.org/jira/browse/MRESOURCES-190 -->
+            <addDefaultExcludes>false</addDefaultExcludes>
+          </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-help-plugin</artifactId>
+        <configuration>
+          <output>${project.build.directory}/effective-settings.xml</output>
+        </configuration>
+        <executions>
+          <execution>
+            <!-- This makes sure we run before maven-archetype-plugin -->
+            <phase>pre-integration-test</phase>
+            <goals>
+              <goal>effective-settings</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-archetype-plugin</artifactId>
+        <configuration>
+          <settingsFile>${project.build.directory}/effective-settings.xml</settingsFile>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>

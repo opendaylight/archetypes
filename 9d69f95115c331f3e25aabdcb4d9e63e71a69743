@@ -1,0 +1,8 @@
+Verified+1: jenkins-releng <jenkins-releng@opendaylight.org>
+Code-Review+1: Robert Varga <nite@hq.sk>
+Code-Review+2: Stephen Kitt <skitt@redhat.com>
+Submitted-by: Stephen Kitt <skitt@redhat.com>
+Submitted-at: Mon, 24 Jun 2019 08:58:35 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/82595
+Project: archetypes
+Branch: refs/heads/stable/neon

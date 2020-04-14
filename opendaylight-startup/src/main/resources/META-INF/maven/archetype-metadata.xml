@@ -12,7 +12,7 @@
     <requiredProperty key="copyright" />
     <requiredProperty key="copyrightYear">
         <defaultValue>
-            2018
+            2020
         </defaultValue>
     </requiredProperty>
     <requiredProperty key="version">

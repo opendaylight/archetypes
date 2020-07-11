@@ -1,0 +1,58 @@
+---
+project: 'archetypes'
+project_creation_date: '2018-02-27'
+project_category: ''
+lifecycle_state: 'Incubation'
+project_lead: &odl_archetypes_ptl
+    name: 'Michael Vorburger'
+    email: 'mike@vorburger.ch'
+    company: 'vorburger'
+    id: 'vorburger'
+    timezone: 'Unknown/Unknown'
+primary_contact: *odl_archetypes_ptl
+issue_tracking:
+    type: 'jira'
+    url: 'https://jira.opendaylight.org/projects/'
+    key: 'archetypes'
+mailing_list:
+    type: 'groups.io'
+    url: 'kernel-dev@lists.opendaylight.org'
+    tag: '[]'
+realtime_discussion:
+    type: 'irc'
+    server: 'freenode.net'
+    channel: '#opendaylight'
+meetings:
+    - type: 'gotomeeting+irc'
+      agenda: 'https://wiki.opendaylight.org'
+      url: ''
+      server: 'freenode.net'
+      channel: '#opendaylight'
+      repeats: ''
+      time: ''
+repositories:
+    - archetypes
+committers:
+    - <<: *odl_archetypes_ptl
+    - name: 'Stephen Kitt'
+      email: 'skitt@redhat.com'
+      company: 'Red Hat'
+      id: 'skitt'
+      timezone: 'Unknown/Unknown'
+    - name: 'Tom Pantelis'
+      email: 'tompantelis@gmail.com'
+      company: 'Red Hat'
+      id: 'tpantelis'
+      timezone: 'Unknown/Unknown'
+    - name: 'Sam Hague'
+      email: 'shague86@gmail.com'
+      company: ''
+      id: 'shague'
+      timezone: 'Unknown/Unknown'
+tsc:
+    # yamllint disable rule:line-length
+    approval: 'https://lists.opendaylight.org/g/TSC/topic/33242007?p=,,,20,0,0,0::Created,,,20,2,0,33242007,d=6,startdate=02/26/2018,enddate=02/27/2018,ct=1&d=6&startdate=02/26/2018&enddate=02/27/2018&ct=1'
+    changes:
+        - type: ''
+          name: ''
+          link: ''

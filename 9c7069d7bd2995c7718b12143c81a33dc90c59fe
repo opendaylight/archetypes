@@ -1,0 +1,8 @@
+Verified+1: jenkins-releng
+Code-Review+1: Luis Gomez <ecelgp@gmail.com>
+Code-Review+2: Stephen Kitt <skitt@redhat.com>
+Submitted-by: Stephen Kitt <skitt@redhat.com>
+Submitted-at: Fri, 19 Mar 2021 08:10:08 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/c/archetypes/+/95426
+Project: archetypes
+Branch: refs/heads/master
